@@ -7,17 +7,17 @@ function returns null.
 import 'dart:math';
 
 void main() {
-  int status = generateRandom();
+  int status = generateRandom() ?? 0;
   print("Status value is ${status}");
 }
 
-int generateRandom() {
+int? generateRandom() {
   Random random = Random();
   int randomly = random.nextInt(2);
   print(randomly);
   if (randomly == 0) {
     return 100;
   } else {
-    return 0;
+    return null;
   }
 }
