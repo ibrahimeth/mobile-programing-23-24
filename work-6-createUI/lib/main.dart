@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,8 +22,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
-
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -38,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children : [
           Image.asset(
             "assets/lake.jpg"
-          ),
+          ), ///Ressim
           const Padding(
             padding: EdgeInsets.all(32.0),
             child: Row(
@@ -69,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text("41")
               ],
             ),
-          ),
+          ), ///Yazılar
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: Row(
@@ -80,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 createButton(Icons.share, "SHARE"),
               ],
             ),
-          ),
+          ), ///Butonlar
           const Padding(
             padding: EdgeInsets.all(25.0),
             child: Text(
@@ -91,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'lake, which warms to 20 degrees Celsius in the summer. Activities '
               'enjoyed here include rowing, and riding the summer toboggan run.',
             ),
-          ),
+          ), ///Yazı açıklama
         ]
       ),
     );
@@ -106,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.blue,
           ),
         )
