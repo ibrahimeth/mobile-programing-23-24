@@ -1,7 +1,7 @@
 # work_6_createui
 
 This app is my Homework
-
+![6](https://github.com/ibrahimeth/mobile-programing-23-24/assets/92324388/70668dc7-6efb-42dc-943f-1cb6adb036bb)
 
 
 ## Getting Started
